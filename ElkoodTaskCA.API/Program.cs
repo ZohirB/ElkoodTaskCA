@@ -1,5 +1,13 @@
 using ElkoodTaskCA.API;
-
+using ElkoodTaskCA.Contracts.Models;
+using ElkoodTaskCA.Contracts.Repositories.BranchInfoRepository;
+using ElkoodTaskCA.Contracts.Repositories.BranchTypeRepository;
+using ElkoodTaskCA.Contracts.Repositories.CompanyInfoRepository;
+using ElkoodTaskCA.Contracts.Repositories.DistributionOperationRepository;
+using ElkoodTaskCA.Contracts.Repositories.ProductionOperationRepository;
+using ElkoodTaskCA.Contracts.Repositories.ProductProducedRepository;
+using ElkoodTaskCA.Contracts.Repositories.ProductsInfoRepository;
+using ElkoodTaskCA.Contracts.Repositories.ProductTypeRepository;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;

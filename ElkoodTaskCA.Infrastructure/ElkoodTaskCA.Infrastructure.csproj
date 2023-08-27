@@ -5,10 +5,10 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
-    
+
     <ItemGroup>
-        <PackageReference Include="ClosedXML" Version="0.95.4" />
-        <PackageReference Include="Elkood.ElFCM" Version="1.0.7" />
+        <PackageReference Include="ClosedXML" Version="0.95.4"/>
+        <PackageReference Include="Elkood.ElFCM" Version="1.0.7"/>
     </ItemGroup>
-    
+
 </Project>

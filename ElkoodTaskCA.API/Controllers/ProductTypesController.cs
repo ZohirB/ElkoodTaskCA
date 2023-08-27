@@ -1,4 +1,6 @@
-﻿using MediatR;
+﻿using ElkoodTaskCA.Contracts.CQRS.Command.ProductTypeCommand;
+using ElkoodTaskCA.Contracts.CQRS.Queries.ProductTypeQuery;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ElkoodTaskCA.API.Controllers;

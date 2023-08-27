@@ -1,4 +1,5 @@
 ﻿using Elkood.Application.OperationResponses;
+using ElkoodTaskCA.Contracts.CQRS.Queries.ProductProducedQuery;
 using ElkoodTaskCA.Contracts.Dtos;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

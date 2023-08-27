@@ -1,4 +1,6 @@
 ﻿using Elkood.Application.OperationResponses;
+using ElkoodTaskCA.Contracts.CQRS.Command.BranchInfoCommand;
+using ElkoodTaskCA.Contracts.CQRS.Queries.BranchInfoQuery;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,7 +18,7 @@ public class BranchesInfoController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAllBranchInfo() 
+    public async Task<IActionResult> GetAllBranchInfo()
     {
         var query = new GetAllBranchInfoQuery();
         var result = await _mediator.Send(query);
