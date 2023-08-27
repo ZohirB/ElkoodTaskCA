@@ -1,5 +1,5 @@
 ﻿using ElkoodTaskCA.Application.CQRS.Command.ProductionOprationCommand;
-using ElkoodTaskCA.Domain.Dtos;
+using ElkoodTaskCA.Contracts.Dtos;
 using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 

@@ -1,5 +1,5 @@
 ﻿using ElkoodTaskCA.Application.CQRS.Command.BranchInfoCommand;
-using ElkoodTaskCA.Domain.Dtos;
+using ElkoodTaskCA.Contracts.Dtos;
 using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 

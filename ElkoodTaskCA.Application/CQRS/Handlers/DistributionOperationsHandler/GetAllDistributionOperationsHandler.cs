@@ -1,6 +1,6 @@
 ﻿using ElkoodTaskCA.Application.CQRS.Queries.DistributionOperationsQueries;
 using ElkoodTaskCA.Application.Repositories.DistributionOperationRepository;
-using ElkoodTaskCA.Domain.Dtos;
+using ElkoodTaskCA.Contracts.Dtos;
 using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.Handlers.DistributionOperationsHandler;

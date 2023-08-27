@@ -1,4 +1,4 @@
-﻿using ElkoodTaskCA.Domain.Dtos;
+﻿using ElkoodTaskCA.Contracts.Dtos;
 using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 

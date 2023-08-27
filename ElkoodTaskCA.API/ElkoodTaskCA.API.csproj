@@ -29,4 +29,8 @@
       <PackageReference Include="VueCliMiddleware" Version="6.0.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\ElkoodTaskCA.Contracts\ElkoodTaskCA.Contracts.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace ElkoodTaskCA.Domain.Dtos;
+﻿namespace ElkoodTaskCA.Contracts.Dtos;
 
 public class ProductDetailsDto
 {

@@ -1,4 +1,4 @@
-﻿using ElkoodTaskCA.Domain.Dtos;
+﻿using ElkoodTaskCA.Contracts.Dtos;
 
 namespace ElkoodTaskCA.Application.Repositories.ProductProducedRepository;
 

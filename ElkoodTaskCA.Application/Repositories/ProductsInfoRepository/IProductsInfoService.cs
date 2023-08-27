@@ -1,5 +1,5 @@
 ﻿using ElkoodTaskCA.Application.CQRS.Command.ProductInfoCommand;
-using ElkoodTaskCA.Domain.Dtos;
+using ElkoodTaskCA.Contracts.Dtos;
 using ElkoodTaskCA.Domain.Models;
 
 namespace ElkoodTaskCA.Application.Repositories.ProductsInfoRepository;
