@@ -37,8 +37,7 @@ builder.Services.AddScoped<IDistributionOperationService, DistributionOperationS
 builder.Services.AddScoped<IProductionOperationService, ProductionOperationsService>();
 builder.Services.AddScoped<IProductsInfoService, ProductsInfoService>();
 
-
-builder.Services.AddMediatR(typeof(Startup));
+builder.Services.AddMediatR(typeof(Startup).Assembly);
 builder.Services.AddCors();
 
 builder.Services.AddSwaggerGen(options =>
@@ -101,7 +100,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 app.Run();
-
 
 namespace ElkoodTaskCA.API
 {

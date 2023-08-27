@@ -8,6 +8,7 @@
 
     <ItemGroup>
         <PackageReference Include="Bogus" Version="34.0.2" />
+        <PackageReference Include="Elkood" Version="1.0.5.1" />
         <PackageReference Include="LanguageExt.Core" Version="4.4.3" />
         <PackageReference Include="MediatR" Version="7.0.0" />
         <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
