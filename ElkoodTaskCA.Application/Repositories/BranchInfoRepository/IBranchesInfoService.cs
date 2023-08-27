@@ -2,7 +2,7 @@
 using ElkoodTaskCA.Domain.Dtos;
 using ElkoodTaskCA.Domain.Models;
 
-namespace ElkoodTaskCA.Presistence.Repositories.BranchInfoRepository;
+namespace ElkoodTaskCA.Application.Repositories.BranchInfoRepository;
 
 public interface IBranchesInfoService
 {

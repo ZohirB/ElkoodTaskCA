@@ -1,6 +1,6 @@
 ﻿using ElkoodTaskCA.Application.CQRS.Command.CompanyInfoCommand;
+using ElkoodTaskCA.Application.Repositories.CompanyInfoRepository;
 using ElkoodTaskCA.Domain.Models;
-using ElkoodTaskCA.Domain.Repositories.CompanyInfoRepository;
 using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.Handlers.CompanyInfoHandler;

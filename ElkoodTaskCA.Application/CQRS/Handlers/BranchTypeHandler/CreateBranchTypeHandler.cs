@@ -1,6 +1,6 @@
 ﻿using ElkoodTaskCA.Application.CQRS.Command.BranchTypeCommand;
+using ElkoodTaskCA.Application.Repositories.BranchTypeRepository;
 using ElkoodTaskCA.Domain.Models;
-using ElkoodTaskCA.Domain.Repositories.BranchTypeRepository;
 using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.Handlers.BranchTypeHandler;

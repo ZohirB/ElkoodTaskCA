@@ -1,7 +1,7 @@
 ﻿using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ElkoodTaskCA.Presistence.Repositories.ProductTypeRepository;
+namespace ElkoodTaskCA.Application.Repositories.ProductTypeRepository;
 
 public class ProductTypesService : IProductTypesService
 {

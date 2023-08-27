@@ -2,7 +2,7 @@
 using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ElkoodTaskCA.Presistence.Repositories.ProductProducedRepository;
+namespace ElkoodTaskCA.Application.Repositories.ProductProducedRepository;
 
 public class ProductProducedService : IProductProducedService
 {

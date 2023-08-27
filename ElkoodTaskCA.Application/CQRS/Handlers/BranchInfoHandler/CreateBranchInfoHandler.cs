@@ -2,8 +2,8 @@
 using Elkood.Domain.Exceptions;
 using Elkood.Domain.Exceptions.Http;
 using ElkoodTaskCA.Application.CQRS.Command.BranchInfoCommand;
+using ElkoodTaskCA.Application.Repositories.BranchInfoRepository;
 using ElkoodTaskCA.Domain.Models;
-using ElkoodTaskCA.Domain.Repositories.BranchInfoRepository;
 using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.Handlers.BranchInfoHandler;

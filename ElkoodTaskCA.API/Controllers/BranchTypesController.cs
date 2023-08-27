@@ -1,6 +1,4 @@
-﻿using ElkoodTaskCA.API.CQRS.Command.BranchTypeCommand;
-using ElkoodTaskCA.API.CQRS.Queries.BranchTypeQuery;
-using MediatR;
+﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ElkoodTaskCA.API.Controllers;

@@ -3,7 +3,7 @@ using ElkoodTaskCA.Domain.Dtos;
 using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ElkoodTaskCA.Presistence.Repositories.BranchInfoRepository;
+namespace ElkoodTaskCA.Application.Repositories.BranchInfoRepository;
 
 public class BranchesInfoService : IBranchesInfoService
 {

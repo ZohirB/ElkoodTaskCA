@@ -3,7 +3,7 @@ using ElkoodTaskCA.Domain.Dtos;
 using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ElkoodTaskCA.Presistence.Repositories.ProductionOperationRepository;
+namespace ElkoodTaskCA.Application.Repositories.ProductionOperationRepository;
 
 public class ProductionOperationsService : IProductionOperationService
 {

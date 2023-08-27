@@ -1,7 +1,7 @@
 ﻿using ElkoodTaskCA.Application.CQRS.Command.DistributionOperationCommand;
 using ElkoodTaskCA.Domain.Dtos;
 
-namespace ElkoodTaskCA.Presistence.Repositories.DistributionOperationRepository;
+namespace ElkoodTaskCA.Application.Repositories.DistributionOperationRepository;
 
 public interface IDistributionOperationService
 {

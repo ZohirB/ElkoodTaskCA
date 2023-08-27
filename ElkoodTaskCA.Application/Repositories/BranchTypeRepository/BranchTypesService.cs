@@ -1,7 +1,7 @@
 ﻿using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ElkoodTaskCA.Presistence.Repositories.BranchTypeRepository;
+namespace ElkoodTaskCA.Application.Repositories.BranchTypeRepository;
 
 public class BranchTypesService : IBranchTypesService
 {

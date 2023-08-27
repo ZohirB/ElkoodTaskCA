@@ -2,7 +2,7 @@
 using ElkoodTaskCA.Domain.Dtos;
 using ElkoodTaskCA.Domain.Models;
 
-namespace ElkoodTaskCA.Presistence.Repositories.ProductsInfoRepository;
+namespace ElkoodTaskCA.Application.Repositories.ProductsInfoRepository;
 
 public interface IProductsInfoService
 {

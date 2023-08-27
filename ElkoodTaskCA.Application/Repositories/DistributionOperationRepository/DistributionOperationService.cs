@@ -3,7 +3,7 @@ using ElkoodTaskCA.Domain.Dtos;
 using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ElkoodTaskCA.Presistence.Repositories.DistributionOperationRepository;
+namespace ElkoodTaskCA.Application.Repositories.DistributionOperationRepository;
 
 public class DistributionOperationService : IDistributionOperationService
 {

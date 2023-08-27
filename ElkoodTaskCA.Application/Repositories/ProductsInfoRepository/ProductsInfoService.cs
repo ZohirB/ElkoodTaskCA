@@ -3,7 +3,7 @@ using ElkoodTaskCA.Domain.Dtos;
 using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ElkoodTaskCA.Presistence.Repositories.ProductsInfoRepository;
+namespace ElkoodTaskCA.Application.Repositories.ProductsInfoRepository;
 
 public class ProductsInfoService : IProductsInfoService
 {

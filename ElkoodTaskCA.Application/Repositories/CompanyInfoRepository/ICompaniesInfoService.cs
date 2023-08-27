@@ -1,7 +1,7 @@
 ﻿using ElkoodTaskCA.Application.CQRS.Command.CompanyInfoCommand;
 using ElkoodTaskCA.Domain.Models;
 
-namespace ElkoodTaskCA.Presistence.Repositories.CompanyInfoRepository;
+namespace ElkoodTaskCA.Application.Repositories.CompanyInfoRepository;
 
 public interface ICompaniesInfoService
 {

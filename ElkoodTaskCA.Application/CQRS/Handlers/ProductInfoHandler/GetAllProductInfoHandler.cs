@@ -1,6 +1,6 @@
 ﻿using ElkoodTaskCA.Application.CQRS.Queries.ProductInfoQuery;
+using ElkoodTaskCA.Application.Repositories.ProductsInfoRepository;
 using ElkoodTaskCA.Domain.Dtos;
-using ElkoodTaskCA.Domain.Repositories.ProductsInfoRepository;
 using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.Handlers.ProductInfoHandler;

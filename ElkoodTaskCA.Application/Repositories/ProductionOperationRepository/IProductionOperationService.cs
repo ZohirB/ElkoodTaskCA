@@ -2,7 +2,7 @@
 using ElkoodTaskCA.Domain.Dtos;
 using ElkoodTaskCA.Domain.Models;
 
-namespace ElkoodTaskCA.Presistence.Repositories.ProductionOperationRepository;
+namespace ElkoodTaskCA.Application.Repositories.ProductionOperationRepository;
 
 public interface IProductionOperationService
 {

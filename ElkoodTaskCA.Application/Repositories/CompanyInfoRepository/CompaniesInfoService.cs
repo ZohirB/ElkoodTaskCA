@@ -2,7 +2,7 @@
 using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ElkoodTaskCA.Presistence.Repositories.CompanyInfoRepository;
+namespace ElkoodTaskCA.Application.Repositories.CompanyInfoRepository;
 
 public class CompaniesInfoService : ICompaniesInfoService
 {
