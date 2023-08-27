@@ -1,6 +1,4 @@
-﻿using ElkoodTaskCA.API.CQRS.Command.CompanyInfoCommand;
-using ElkoodTaskCA.API.CQRS.Queries.CompanyInfoQuery;
-using MediatR;
+﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ElkoodTaskCA.API.Controllers;
