@@ -1,5 +1,5 @@
-﻿using ElkoodTaskCA.Contracts.CQRS.Command.ProductTypeCommand;
-using ElkoodTaskCA.Contracts.CQRS.Queries.ProductTypeQuery;
+﻿using ElkoodTaskCA.Application.CQRS.Command.ProductTypeCommand;
+using ElkoodTaskCA.Application.CQRS.Queries.ProductTypeQuery;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

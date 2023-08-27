@@ -1,5 +1,5 @@
-﻿using ElkoodTaskCA.Contracts.CQRS.Command.BranchTypeCommand;
-using ElkoodTaskCA.Contracts.CQRS.Queries.BranchTypeQuery;
+﻿using ElkoodTaskCA.Application.CQRS.Command.BranchTypeCommand;
+using ElkoodTaskCA.Application.CQRS.Queries.BranchTypeQuery;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

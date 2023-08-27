@@ -1,13 +1,13 @@
 using ElkoodTaskCA.API;
-using ElkoodTaskCA.Contracts.Models;
-using ElkoodTaskCA.Contracts.Repositories.BranchInfoRepository;
-using ElkoodTaskCA.Contracts.Repositories.BranchTypeRepository;
-using ElkoodTaskCA.Contracts.Repositories.CompanyInfoRepository;
-using ElkoodTaskCA.Contracts.Repositories.DistributionOperationRepository;
-using ElkoodTaskCA.Contracts.Repositories.ProductionOperationRepository;
-using ElkoodTaskCA.Contracts.Repositories.ProductProducedRepository;
-using ElkoodTaskCA.Contracts.Repositories.ProductsInfoRepository;
-using ElkoodTaskCA.Contracts.Repositories.ProductTypeRepository;
+using ElkoodTaskCA.Application.Models;
+using ElkoodTaskCA.Application.Repositories.BranchInfoRepository;
+using ElkoodTaskCA.Application.Repositories.BranchTypeRepository;
+using ElkoodTaskCA.Application.Repositories.CompanyInfoRepository;
+using ElkoodTaskCA.Application.Repositories.DistributionOperationRepository;
+using ElkoodTaskCA.Application.Repositories.ProductionOperationRepository;
+using ElkoodTaskCA.Application.Repositories.ProductProducedRepository;
+using ElkoodTaskCA.Application.Repositories.ProductsInfoRepository;
+using ElkoodTaskCA.Application.Repositories.ProductTypeRepository;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -28,14 +28,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
 
-builder.Services.AddTransient<IBranchTypesService, BranchTypesService>();
-builder.Services.AddTransient<IBranchesInfoService, BranchesInfoService>();
-builder.Services.AddTransient<IProductTypesService, ProductTypesService>();
-builder.Services.AddTransient<IProductProducedService, ProductProducedService>();
-builder.Services.AddTransient<ICompaniesInfoService, CompaniesInfoService>();
-builder.Services.AddTransient<IDistributionOperationService, DistributionOperationService>();
-builder.Services.AddTransient<IProductionOperationService, ProductionOperationsService>();
-builder.Services.AddTransient<IProductsInfoService, ProductsInfoService>();
+builder.Services.AddScoped<IBranchTypesService, BranchTypesService>();
+builder.Services.AddScoped<IBranchesInfoService, BranchesInfoService>();
+builder.Services.AddScoped<IProductTypesService, ProductTypesService>();
+builder.Services.AddScoped<IProductProducedService, ProductProducedService>();
+builder.Services.AddScoped<ICompaniesInfoService, CompaniesInfoService>();
+builder.Services.AddScoped<IDistributionOperationService, DistributionOperationService>();
+builder.Services.AddScoped<IProductionOperationService, ProductionOperationsService>();
+builder.Services.AddScoped<IProductsInfoService, ProductsInfoService>();
 
 
 builder.Services.AddMediatR(typeof(Startup));

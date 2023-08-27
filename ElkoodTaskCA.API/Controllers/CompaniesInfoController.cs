@@ -1,5 +1,5 @@
-﻿using ElkoodTaskCA.Contracts.CQRS.Command.CompanyInfoCommand;
-using ElkoodTaskCA.Contracts.CQRS.Queries.CompanyInfoQuery;
+﻿using ElkoodTaskCA.Application.CQRS.Command.CompanyInfoCommand;
+using ElkoodTaskCA.Application.CQRS.Queries.CompanyInfoQuery;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
