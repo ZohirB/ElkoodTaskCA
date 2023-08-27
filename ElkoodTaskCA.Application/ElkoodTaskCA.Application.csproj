@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Elkood.ElActivityHistory" Version="1.0.0" />
+        <PackageReference Include="Elkood.ElAWS" Version="1.0.8" />
+        <PackageReference Include="Elkood.ELMapBox" Version="1.0.0" />
+        <PackageReference Include="Elkood.ElQuartz" Version="1.0.3" />
+        <PackageReference Include="Elkood.ElVerification" Version="1.0.2" />
+        <PackageReference Include="HarfBuzzSharp.NativeAssets.Linux" Version="2.8.2.3" />
+        <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="2.88.3" />
+        <PackageReference Include="Stripe.net" Version="41.10.0" />
+    </ItemGroup>
+    
+</Project>
