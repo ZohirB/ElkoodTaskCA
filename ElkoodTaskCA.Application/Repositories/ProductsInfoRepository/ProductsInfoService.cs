@@ -1,4 +1,4 @@
-﻿using ElkoodTaskCA.Application.CQRS.Command.ProductInfoCommand;
+﻿using ElkoodTaskCA.Application.CQRS.ProductInfo.Commands.Create;
 using ElkoodTaskCA.Contracts.Dtos;
 using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;

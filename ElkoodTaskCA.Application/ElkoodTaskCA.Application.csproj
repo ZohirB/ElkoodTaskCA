@@ -17,4 +17,23 @@
       <ProjectReference Include="..\ElkoodTaskCA.Domain\ElkoodTaskCA.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="CQRS\BranchInfo\Commands\" />
+      <Folder Include="CQRS\BranchInfo\Queries\" />
+      <Folder Include="CQRS\BranchType\Commands\" />
+      <Folder Include="CQRS\BranchType\Queries\" />
+      <Folder Include="CQRS\CompanyInfo\Commands\" />
+      <Folder Include="CQRS\CompanyInfo\Queries\" />
+      <Folder Include="CQRS\DistributionOperation\Commands\" />
+      <Folder Include="CQRS\DistributionOperation\Queries\" />
+      <Folder Include="CQRS\ProductInfo\Commands\" />
+      <Folder Include="CQRS\ProductInfo\Queries\" />
+      <Folder Include="CQRS\ProductionOpration\Commands\" />
+      <Folder Include="CQRS\ProductionOpration\Queries\" />
+      <Folder Include="CQRS\ProductProduced\Commands\" />
+      <Folder Include="CQRS\ProductProduced\Queries\" />
+      <Folder Include="CQRS\ProductType\Commands\" />
+      <Folder Include="CQRS\ProductType\Queries\" />
+    </ItemGroup>
+
 </Project>

@@ -1,4 +1,4 @@
-﻿using ElkoodTaskCA.Application.CQRS.Command.DistributionOperationCommand;
+﻿using ElkoodTaskCA.Application.CQRS.DistributionOperation.Commands.Create;
 using ElkoodTaskCA.Contracts.Dtos;
 using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;

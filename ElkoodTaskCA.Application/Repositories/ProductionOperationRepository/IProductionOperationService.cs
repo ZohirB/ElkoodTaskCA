@@ -1,4 +1,4 @@
-﻿using ElkoodTaskCA.Application.CQRS.Command.ProductionOprationCommand;
+﻿using ElkoodTaskCA.Application.CQRS.ProductionOpration.Commands.Create;
 using ElkoodTaskCA.Contracts.Dtos;
 using ElkoodTaskCA.Domain.Models;
 

@@ -1,4 +1,4 @@
-﻿using ElkoodTaskCA.Application.CQRS.Command.DistributionOperationCommand;
+﻿using ElkoodTaskCA.Application.CQRS.DistributionOperation.Commands.Create;
 using ElkoodTaskCA.Contracts.Dtos;
 
 namespace ElkoodTaskCA.Application.Repositories.DistributionOperationRepository;
