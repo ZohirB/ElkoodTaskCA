@@ -1,5 +1,5 @@
 ﻿using Elkood.Application.OperationResponses;
-using ElkoodTaskCA.Application.Models;
+using ElkoodTaskCA.Domain.Models;
 using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.Command.DistributionOperationCommand;

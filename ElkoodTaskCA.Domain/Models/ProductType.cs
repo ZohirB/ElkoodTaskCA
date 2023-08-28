@@ -1,8 +1,8 @@
-﻿using MediatR;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ElkoodTaskCA.Application.Models;
+namespace ElkoodTaskCA.Domain.Models;
 
-public class BranchType : IRequest<Unit>
+public class ProductType
 {
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }

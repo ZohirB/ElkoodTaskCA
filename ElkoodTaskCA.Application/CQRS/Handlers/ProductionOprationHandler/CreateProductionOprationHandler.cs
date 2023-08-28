@@ -2,8 +2,8 @@
 using Elkood.Domain.Exceptions;
 using Elkood.Domain.Exceptions.Http;
 using ElkoodTaskCA.Application.CQRS.Command.ProductionOprationCommand;
-using ElkoodTaskCA.Application.Models;
 using ElkoodTaskCA.Application.Repositories.ProductionOperationRepository;
+using ElkoodTaskCA.Domain.Models;
 using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.Handlers.ProductionOprationHandler;

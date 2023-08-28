@@ -1,6 +1,6 @@
 ﻿using ElkoodTaskCA.Application.CQRS.Queries.ProductTypeQuery;
-using ElkoodTaskCA.Application.Models;
 using ElkoodTaskCA.Application.Repositories.ProductTypeRepository;
+using ElkoodTaskCA.Domain.Models;
 using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.Handlers.ProductTypeHandler;

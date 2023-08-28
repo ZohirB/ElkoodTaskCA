@@ -1,5 +1,5 @@
 ﻿using ElkoodTaskCA.Application.Dtos;
-using ElkoodTaskCA.Application.Models;
+using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace ElkoodTaskCA.Application.Repositories.ProductProducedRepository;

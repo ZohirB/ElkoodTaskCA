@@ -1,6 +1,8 @@
-﻿namespace ElkoodTaskCA.Application.Models;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
-public class ProductType
+namespace ElkoodTaskCA.Domain.Models;
+
+public class BranchType
 {
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }

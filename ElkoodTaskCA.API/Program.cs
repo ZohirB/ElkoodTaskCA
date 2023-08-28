@@ -1,5 +1,3 @@
-using ElkoodTaskCA.API;
-using ElkoodTaskCA.Application.Models;
 using ElkoodTaskCA.Application.Repositories.BranchInfoRepository;
 using ElkoodTaskCA.Application.Repositories.BranchTypeRepository;
 using ElkoodTaskCA.Application.Repositories.CompanyInfoRepository;
@@ -8,6 +6,7 @@ using ElkoodTaskCA.Application.Repositories.ProductionOperationRepository;
 using ElkoodTaskCA.Application.Repositories.ProductProducedRepository;
 using ElkoodTaskCA.Application.Repositories.ProductsInfoRepository;
 using ElkoodTaskCA.Application.Repositories.ProductTypeRepository;
+using ElkoodTaskCA.Domain.Models;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -37,7 +36,13 @@ builder.Services.AddScoped<IDistributionOperationService, DistributionOperationS
 builder.Services.AddScoped<IProductionOperationService, ProductionOperationsService>();
 builder.Services.AddScoped<IProductsInfoService, ProductsInfoService>();
 
-builder.Services.AddMediatR(typeof(Startup).Assembly);
+
+builder.Services.AddMediatR(        
+    ElkoodTaskCA.Domain.AssemblyReference.Assembly,
+    ElkoodTaskCA.Application.AssemblyReference.Assembly,
+    ElkoodTaskCA.API.AssemblyReference.Assembly
+    );
+
 builder.Services.AddCors();
 
 builder.Services.AddSwaggerGen(options =>

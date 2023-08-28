@@ -1,6 +1,6 @@
 ﻿using ElkoodTaskCA.Application.CQRS.Command.BranchInfoCommand;
 using ElkoodTaskCA.Application.Dtos;
-using ElkoodTaskCA.Application.Models;
+using ElkoodTaskCA.Domain.Models;
 
 namespace ElkoodTaskCA.Application.Repositories.BranchInfoRepository;
 

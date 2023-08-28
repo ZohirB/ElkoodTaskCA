@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace ElkoodTaskCA.Application.Models;
+namespace ElkoodTaskCA.Domain.Models;
 
 public class ApplicationDbContext : DbContext
 {

@@ -7,18 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-        <PackageReference Include="Polly" Version="7.2.1" />
-        <PackageReference Include="protobuf-net" Version="3.2.0" />
-        <PackageReference Include="RabbitMQ.Client" Version="6.2.1" />
-        <PackageReference Include="TimeZoneConverter" Version="6.1.0" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\ElkoodTaskCA.API\ElkoodTaskCA.API.csproj" />
-        <ProjectReference Include="..\ElkoodTaskCA.Contracts\ElkoodTaskCA.Contracts.csproj" />
-        <ProjectReference Include="..\ElkoodTaskCA.Infrastructure\ElkoodTaskCA.Infrastructure.csproj" />
-        <ProjectReference Include="..\ElkoodTaskCA.IntergrationEvents\ElkoodTaskCA.IntergrationEvents.csproj" />
+      <PackageReference Include="Elkood" Version="1.0.5.1" />
     </ItemGroup>
 
 </Project>
