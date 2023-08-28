@@ -1,11 +1,5 @@
-using ElkoodTaskCA.Application.Repositories.BranchInfoRepository;
-using ElkoodTaskCA.Application.Repositories.BranchTypeRepository;
-using ElkoodTaskCA.Application.Repositories.CompanyInfoRepository;
-using ElkoodTaskCA.Application.Repositories.DistributionOperationRepository;
-using ElkoodTaskCA.Application.Repositories.ProductionOperationRepository;
-using ElkoodTaskCA.Application.Repositories.ProductProducedRepository;
-using ElkoodTaskCA.Application.Repositories.ProductsInfoRepository;
-using ElkoodTaskCA.Application.Repositories.ProductTypeRepository;
+using ElkoodTaskCA.Application.Repositories.ImplementationRepository;
+using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 using ElkoodTaskCA.Domain.Models;
 using MediatR;
 using Microsoft.EntityFrameworkCore;

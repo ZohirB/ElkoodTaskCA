@@ -1,4 +1,4 @@
-﻿using ElkoodTaskCA.Application.Repositories.BranchTypeRepository;
+﻿using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.BranchType.Commands.Create;

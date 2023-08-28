@@ -1,4 +1,4 @@
-﻿using ElkoodTaskCA.Application.Repositories.CompanyInfoRepository;
+﻿using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.CompanyInfo.Queries.GetAll;

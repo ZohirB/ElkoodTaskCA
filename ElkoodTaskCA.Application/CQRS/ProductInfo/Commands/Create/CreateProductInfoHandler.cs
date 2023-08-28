@@ -1,7 +1,7 @@
 ﻿using Elkood.Application.OperationResponses;
 using Elkood.Domain.Exceptions;
 using Elkood.Domain.Exceptions.Http;
-using ElkoodTaskCA.Application.Repositories.ProductsInfoRepository;
+using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 using ElkoodTaskCA.Contracts.Dtos;
 using MediatR;
 

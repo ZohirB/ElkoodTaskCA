@@ -1,7 +1,8 @@
-﻿using ElkoodTaskCA.Domain.Models;
+﻿using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
+using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ElkoodTaskCA.Application.Repositories.ProductTypeRepository;
+namespace ElkoodTaskCA.Application.Repositories.ImplementationRepository;
 
 public class ProductTypesService : IProductTypesService
 {

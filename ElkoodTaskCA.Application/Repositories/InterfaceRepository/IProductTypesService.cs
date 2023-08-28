@@ -1,6 +1,6 @@
 ﻿using ElkoodTaskCA.Domain.Models;
 
-namespace ElkoodTaskCA.Application.Repositories.ProductTypeRepository;
+namespace ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 
 public interface IProductTypesService
 {

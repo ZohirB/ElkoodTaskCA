@@ -1,8 +1,9 @@
 ﻿using ElkoodTaskCA.Application.CQRS.CompanyInfo.Commands.Create;
+using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ElkoodTaskCA.Application.Repositories.CompanyInfoRepository;
+namespace ElkoodTaskCA.Application.Repositories.ImplementationRepository;
 
 public class CompaniesInfoService : ICompaniesInfoService
 {

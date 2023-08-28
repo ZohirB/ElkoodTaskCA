@@ -1,7 +1,7 @@
 ﻿using Elkood.Application.OperationResponses;
 using Elkood.Domain.Exceptions;
 using Elkood.Domain.Exceptions.Http;
-using ElkoodTaskCA.Application.Repositories.DistributionOperationRepository;
+using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.DistributionOperation.Commands.Create;

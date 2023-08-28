@@ -1,6 +1,6 @@
 ﻿using ElkoodTaskCA.Contracts.Dtos;
 
-namespace ElkoodTaskCA.Application.Repositories.ProductProducedRepository;
+namespace ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 
 public interface IProductProducedService
 {

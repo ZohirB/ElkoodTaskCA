@@ -1,9 +1,10 @@
 ﻿using ElkoodTaskCA.Application.CQRS.DistributionOperation.Commands.Create;
+using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 using ElkoodTaskCA.Contracts.Dtos;
 using ElkoodTaskCA.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ElkoodTaskCA.Application.Repositories.DistributionOperationRepository;
+namespace ElkoodTaskCA.Application.Repositories.ImplementationRepository;
 
 public class DistributionOperationService : IDistributionOperationService
 {

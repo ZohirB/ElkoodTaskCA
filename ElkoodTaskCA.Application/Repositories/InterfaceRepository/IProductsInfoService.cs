@@ -1,7 +1,7 @@
 ﻿using ElkoodTaskCA.Application.CQRS.ProductInfo.Commands.Create;
 using ElkoodTaskCA.Contracts.Dtos;
 
-namespace ElkoodTaskCA.Application.Repositories.ProductsInfoRepository;
+namespace ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 
 public interface IProductsInfoService
 {

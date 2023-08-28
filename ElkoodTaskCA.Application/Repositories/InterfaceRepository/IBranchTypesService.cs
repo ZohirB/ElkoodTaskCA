@@ -1,6 +1,6 @@
 ﻿using ElkoodTaskCA.Domain.Models;
 
-namespace ElkoodTaskCA.Application.Repositories.BranchTypeRepository;
+namespace ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 
 public interface IBranchTypesService
 {
