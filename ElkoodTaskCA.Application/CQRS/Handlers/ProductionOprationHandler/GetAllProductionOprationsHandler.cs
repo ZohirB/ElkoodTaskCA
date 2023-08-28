@@ -1,6 +1,6 @@
 ﻿using ElkoodTaskCA.Application.CQRS.Queries.ProductionOprationQuery;
-using ElkoodTaskCA.Application.Dtos;
 using ElkoodTaskCA.Application.Repositories.ProductionOperationRepository;
+using ElkoodTaskCA.Contracts.Dtos;
 using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.Handlers.ProductionOprationHandler;

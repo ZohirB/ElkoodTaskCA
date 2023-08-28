@@ -1,4 +1,4 @@
-﻿namespace ElkoodTaskCA.Application.Dtos;
+﻿namespace ElkoodTaskCA.Contracts.Dtos;
 
 public class DistrubutionDetailsDto
 {

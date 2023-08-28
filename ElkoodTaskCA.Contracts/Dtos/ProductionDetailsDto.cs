@@ -1,4 +1,4 @@
-﻿namespace ElkoodTaskCA.Application.Dtos;
+﻿namespace ElkoodTaskCA.Contracts.Dtos;
 
 public class ProductionDetailsDto
 {
@@ -6,6 +6,6 @@ public class ProductionDetailsDto
     public string BranchInfoName { get; set; }
     public string ProductInfoName { get; set; }
     public int quantity { get; set; }
-    public int RemainingQuantity { get; internal set; }
+    public int RemainingQuantity { get; set; }
     public DateTime date { get; set; }
 }

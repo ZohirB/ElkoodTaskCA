@@ -1,6 +1,6 @@
 ﻿using ElkoodTaskCA.Application.CQRS.Queries.BranchInfoQuery;
-using ElkoodTaskCA.Application.Dtos;
 using ElkoodTaskCA.Application.Repositories.BranchInfoRepository;
+using ElkoodTaskCA.Contracts.Dtos;
 using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.Handlers.BranchInfoHandler;
