@@ -1,5 +1,4 @@
 ﻿using ElkoodTaskCA.Application.CQRS.CompanyInfo.Commands.Create;
-using ElkoodTaskCA.Domain.Models;
 using ElkoodTaskCA.Domain.Models.MainEntities;
 
 namespace ElkoodTaskCA.Application.Repositories.InterfaceRepository;

@@ -1,5 +1,4 @@
 ﻿using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
-using ElkoodTaskCA.Domain.Models;
 using ElkoodTaskCA.Domain.Models.MainEntities;
 using ElkoodTaskCA.Persistence.Context;
 using Microsoft.EntityFrameworkCore;

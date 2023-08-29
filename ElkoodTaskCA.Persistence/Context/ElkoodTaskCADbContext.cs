@@ -1,5 +1,4 @@
-﻿using ElkoodTaskCA.Domain;
-using ElkoodTaskCA.Domain.Models.MainEntities;
+﻿using ElkoodTaskCA.Domain.Models.MainEntities;
 using ElkoodTaskCA.Domain.Models.UserEntities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;

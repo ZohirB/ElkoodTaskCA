@@ -1,7 +1,5 @@
 ﻿using ElkoodTaskCA.Application.CQRS.BranchInfo.Commands.Create;
-using ElkoodTaskCA.Contracts.Dtos;
 using ElkoodTaskCA.Contracts.Dtos.MainDtos;
-using ElkoodTaskCA.Domain.Models;
 using ElkoodTaskCA.Domain.Models.MainEntities;
 
 namespace ElkoodTaskCA.Application.Repositories.InterfaceRepository;

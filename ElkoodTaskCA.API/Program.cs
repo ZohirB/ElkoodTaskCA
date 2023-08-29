@@ -1,7 +1,6 @@
 using System.Text;
 using ElkoodTaskCA.Application.Repositories.ImplementationRepository;
 using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
-using ElkoodTaskCA.Domain.Models;
 using ElkoodTaskCA.Domain.Models.UserEntities;
 using ElkoodTaskCA.Persistence.Context;
 using MediatR;

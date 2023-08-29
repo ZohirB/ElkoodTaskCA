@@ -1,5 +1,4 @@
 ﻿using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
-using ElkoodTaskCA.Contracts.Dtos;
 using ElkoodTaskCA.Contracts.Dtos.MainDtos;
 using MediatR;
 

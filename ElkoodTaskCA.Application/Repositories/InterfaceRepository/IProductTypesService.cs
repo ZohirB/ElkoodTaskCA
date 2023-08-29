@@ -1,5 +1,4 @@
-﻿using ElkoodTaskCA.Domain.Models;
-using ElkoodTaskCA.Domain.Models.MainEntities;
+﻿using ElkoodTaskCA.Domain.Models.MainEntities;
 
 namespace ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 
