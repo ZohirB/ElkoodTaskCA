@@ -1,4 +1,5 @@
 ﻿using ElkoodTaskCA.Domain.Models;
+using ElkoodTaskCA.Domain.Models.MainEntities;
 
 namespace ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 
@@ -8,5 +9,5 @@ public interface IProductTypesService
     Task<ProductType> GetProductTypeById(int id);
     Task<ProductType> CreateProductType(ProductType productType);
     ProductType UpdateProductType(ProductType productType);
-    ProductType DeleteProductType(ProductType productType);
+    //ProductType DeleteProductType(ProductType productType);
 }

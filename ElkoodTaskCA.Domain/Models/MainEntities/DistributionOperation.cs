@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace ElkoodTaskCA.Domain.Models;
+﻿namespace ElkoodTaskCA.Domain.Models.MainEntities;
 
 public class DistributionOperation
 {

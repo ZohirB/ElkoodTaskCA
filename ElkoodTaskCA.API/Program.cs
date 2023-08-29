@@ -1,8 +1,14 @@
+using System.Text;
 using ElkoodTaskCA.Application.Repositories.ImplementationRepository;
 using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 using ElkoodTaskCA.Domain.Models;
+using ElkoodTaskCA.Domain.Models.UserEntities;
+using ElkoodTaskCA.Persistence.Context;
 using MediatR;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,7 +18,7 @@ var connectiosString = builder.Configuration.GetConnectionString("DefaultConnect
 //builder.Services.AddTransient<DataSeeder>();
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
+builder.Services.AddDbContext<ElkoodTaskCADbContext>(options =>
     options.UseNpgsql(connectiosString)
 );
 
@@ -30,12 +36,32 @@ builder.Services.AddScoped<IDistributionOperationService, DistributionOperationS
 builder.Services.AddScoped<IProductionOperationService, ProductionOperationsService>();
 builder.Services.AddScoped<IProductsInfoService, ProductsInfoService>();
 
-
+// ADD MediatR
 builder.Services.AddMediatR(        
     ElkoodTaskCA.Domain.AssemblyReference.Assembly,
     ElkoodTaskCA.Application.AssemblyReference.Assembly,
-    ElkoodTaskCA.API.AssemblyReference.Assembly
+    ElkoodTaskCA.API.AssemblyReference.Assembly,
+    ElkoodTaskCA.Persistence.AssemblyReference.Assembly
     );
+
+// ADD Identity
+builder.Services
+    .AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<ElkoodTaskCADbContext>()
+    .AddDefaultTokenProviders();
+
+
+// Configure Identit
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    options.Password.RequiredLength = 5;
+    options.Password.RequireDigit = false;
+    options.Password.RequireLowercase = false;
+    options.Password.RequireUppercase = false;
+    options.Password.RequireNonAlphanumeric = false;
+    options.SignIn.RequireConfirmedEmail = false;
+});
+
 
 builder.Services.AddCors();
 
@@ -67,7 +93,7 @@ builder.Services.AddSwaggerGen(options =>
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
         Description =
-            "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer 12345abcdef\""
+            "JWT Authorization header using the Bearer scheme."
     });
     options.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
@@ -86,6 +112,29 @@ builder.Services.AddSwaggerGen(options =>
         }
     });
 });
+
+builder.Services
+    .AddAuthentication(options =>
+    {
+        options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    })
+    .AddJwtBearer(optoins =>
+    {
+        optoins.SaveToken = true;
+        optoins.RequireHttpsMetadata = false;
+        optoins.TokenValidationParameters = new TokenValidationParameters()
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidIssuer = builder.Configuration["JWT:ValidIssuer"],
+            ValidAudience = builder.Configuration["JWT:ValidAudience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]))
+        };
+    });
+
+
 var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

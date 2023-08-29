@@ -8,7 +8,7 @@ namespace ElkoodTaskCA.Application.CQRS.DistributionOperation.Commands.Create;
 
 public class
     CreateDistributionOperationHandler : IRequestHandler<CreateDistributionOperationCommand,
-        OperationResponse<Domain.Models.DistributionOperation>>
+        OperationResponse<Domain.Models.MainEntities.DistributionOperation>>
 {
     private readonly IDistributionOperationService _distributionOperationService;
 
@@ -17,7 +17,7 @@ public class
         _distributionOperationService = distributionOperationService;
     }
 
-    public async Task<OperationResponse<Domain.Models.DistributionOperation>> Handle(CreateDistributionOperationCommand request,
+    public async Task<OperationResponse<Domain.Models.MainEntities.DistributionOperation>> Handle(CreateDistributionOperationCommand request,
         CancellationToken cancellationToken)
     {
         var totalRemainingQuantity = await _distributionOperationService.TotalRemainingQuantity(request);
@@ -36,7 +36,7 @@ public class
 
         // TODO check for bug
         _distributionOperationService.CreateDistributionOperation(request);
-        var distributionOperation = new Domain.Models.DistributionOperation
+        var distributionOperation = new Domain.Models.MainEntities.DistributionOperation
         {
             Quantity = request.quantity,
             Date = request.date

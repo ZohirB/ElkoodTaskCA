@@ -3,7 +3,7 @@ using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.BranchInfo.Commands.Create;
 
-public class CreateBranchInfoCommand : IRequest<OperationResponse<Domain.Models.BranchInfo>>
+public class CreateBranchInfoCommand : IRequest<OperationResponse<Domain.Models.MainEntities.BranchInfo>>
 {
     [MaxLength(100)] public string Name { get; set; }
 

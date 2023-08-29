@@ -15,6 +15,7 @@
     <ItemGroup>
       <ProjectReference Include="..\ElkoodTaskCA.Contracts\ElkoodTaskCA.Contracts.csproj" />
       <ProjectReference Include="..\ElkoodTaskCA.Domain\ElkoodTaskCA.Domain.csproj" />
+      <ProjectReference Include="..\ElkoodTaskCA.Persistence\ElkoodTaskCA.Persistence.csproj" />
     </ItemGroup>
 
     <ItemGroup>

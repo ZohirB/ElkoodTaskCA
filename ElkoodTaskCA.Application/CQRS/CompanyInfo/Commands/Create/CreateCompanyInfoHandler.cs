@@ -3,7 +3,7 @@ using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.CompanyInfo.Commands.Create;
 
-public class CreateCompanyInfoHandler : IRequestHandler<CreateCompanyInfoCommand, Domain.Models.CompanyInfo>
+public class CreateCompanyInfoHandler : IRequestHandler<CreateCompanyInfoCommand, Domain.Models.MainEntities.CompanyInfo>
 {
     private readonly ICompaniesInfoService _companiesInfoService;
 
@@ -13,7 +13,7 @@ public class CreateCompanyInfoHandler : IRequestHandler<CreateCompanyInfoCommand
     }
 
 
-    public async Task<Domain.Models.CompanyInfo> Handle(CreateCompanyInfoCommand request, CancellationToken cancellationToken)
+    public async Task<Domain.Models.MainEntities.CompanyInfo> Handle(CreateCompanyInfoCommand request, CancellationToken cancellationToken)
     {
         var companyInfo = await _companiesInfoService.AddCompanyInfo(request);
         return companyInfo;

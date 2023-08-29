@@ -1,4 +1,5 @@
 ﻿using ElkoodTaskCA.Contracts.Dtos;
+using ElkoodTaskCA.Contracts.Dtos.MainDtos;
 
 namespace ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 

@@ -3,6 +3,7 @@ using Elkood.Domain.Exceptions;
 using Elkood.Domain.Exceptions.Http;
 using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 using ElkoodTaskCA.Contracts.Dtos;
+using ElkoodTaskCA.Contracts.Dtos.MainDtos;
 using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.ProductInfo.Commands.Create;

@@ -1,16 +1,19 @@
 ﻿using ElkoodTaskCA.Application.CQRS.DistributionOperation.Commands.Create;
 using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 using ElkoodTaskCA.Contracts.Dtos;
+using ElkoodTaskCA.Contracts.Dtos.MainDtos;
 using ElkoodTaskCA.Domain.Models;
+using ElkoodTaskCA.Domain.Models.MainEntities;
+using ElkoodTaskCA.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace ElkoodTaskCA.Application.Repositories.ImplementationRepository;
 
 public class DistributionOperationService : IDistributionOperationService
 {
-    private readonly ApplicationDbContext _context;
+    private readonly ElkoodTaskCADbContext _context;
 
-    public DistributionOperationService(ApplicationDbContext context)
+    public DistributionOperationService(ElkoodTaskCADbContext context)
     {
         _context = context;
     }

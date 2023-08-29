@@ -1,16 +1,19 @@
 ﻿using ElkoodTaskCA.Application.CQRS.BranchInfo.Commands.Create;
 using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 using ElkoodTaskCA.Contracts.Dtos;
+using ElkoodTaskCA.Contracts.Dtos.MainDtos;
 using ElkoodTaskCA.Domain.Models;
+using ElkoodTaskCA.Domain.Models.MainEntities;
+using ElkoodTaskCA.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace ElkoodTaskCA.Application.Repositories.ImplementationRepository;
 
 public class BranchesInfoService : IBranchesInfoService
 {
-    private readonly ApplicationDbContext _context;
+    private readonly ElkoodTaskCADbContext _context;
 
-    public BranchesInfoService(ApplicationDbContext context)
+    public BranchesInfoService(ElkoodTaskCADbContext context)
     {
         _context = context;
     }

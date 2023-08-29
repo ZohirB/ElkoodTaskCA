@@ -1,64 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace ElkoodTaskCA.Domain.Models;
-
-public class ApplicationDbContext : DbContext
-{
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-    {
-    }
-
-    public DbSet<BranchType> BranchTypes { get; set; }
-    public DbSet<CompanyInfo> CompanyInfo { get; set; }
-    public DbSet<ProductType> ProductTypes { get; set; }
-    public DbSet<BranchInfo> BranchInfo { get; set; }
-    public DbSet<ProductInfo> ProductInfo { get; set; }
-    public DbSet<ProductionOperation> ProductionOperations { get; set; }
-    public DbSet<DistributionOperation> DistributionOperations { get; set; }
-
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<BranchInfo>()
-            .HasMany(a => a.ProductionOperations)
-            .WithOne(b => b.BranchInfo)
-            .HasForeignKey(b => b.BranchInfoId)
-            .OnDelete(DeleteBehavior.Restrict);
-
-        modelBuilder.Entity<ProductInfo>()
-            .HasMany(a => a.ProductionOperations)
-            .WithOne(b => b.ProductInfo)
-            .HasForeignKey(b => b.ProductInfoId)
-            .OnDelete(DeleteBehavior.Restrict);
-
-        modelBuilder.Entity<BranchInfo>()
-            .HasMany(a => a.DistributionOperations)
-            .WithOne(b => b.PrimaryBranchInfo)
-            .HasForeignKey(b => b.PrimaryBranchInfoId)
-            .OnDelete(DeleteBehavior.Restrict);
-
-        modelBuilder.Entity<DistributionOperation>()
-            .HasOne(d => d.PrimaryBranchInfo)
-            .WithMany()
-            .HasForeignKey(d => d.PrimaryBranchInfoId)
-            .OnDelete(DeleteBehavior.Restrict);
-
-        modelBuilder.Entity<DistributionOperation>()
-            .HasOne(d => d.SecondaryBranchInfo)
-            .WithMany()
-            .HasForeignKey(d => d.SecondaryBranchInfoId)
-            .OnDelete(DeleteBehavior.Restrict);
-
-        modelBuilder.Entity<ProductInfo>()
-            .HasMany(a => a.DistributionOperations)
-            .WithOne(b => b.ProductInfo)
-            .HasForeignKey(b => b.ProductInfoId)
-            .OnDelete(DeleteBehavior.Restrict);
-
-        /*
-            there is better way to do data seeding than the way i'm doing it
-            but i'm still super extra noobie in asp.net :-|
-        */
-
+/*
         modelBuilder.Entity<BranchType>()
             .HasData(
                 new BranchType { Id = 1, Name = "Primary" },
@@ -165,5 +105,4 @@ public class ApplicationDbContext : DbContext
                     Date = DateTime.Parse("2025-01-01")
                 }
             );
-    }
-}
+*/

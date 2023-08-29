@@ -1,14 +1,16 @@
 ﻿using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 using ElkoodTaskCA.Domain.Models;
+using ElkoodTaskCA.Domain.Models.MainEntities;
+using ElkoodTaskCA.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace ElkoodTaskCA.Application.Repositories.ImplementationRepository;
 
 public class ProductTypesService : IProductTypesService
 {
-    private readonly ApplicationDbContext _context;
+    private readonly ElkoodTaskCADbContext _context;
 
-    public ProductTypesService(ApplicationDbContext context)
+    public ProductTypesService(ElkoodTaskCADbContext context)
     {
         _context = context;
     }
@@ -37,10 +39,12 @@ public class ProductTypesService : IProductTypesService
         return productType;
     }
 
+    /*
     public ProductType DeleteProductType(ProductType productType)
     {
         _context.Remove(productType);
         _context.SaveChanges();
         return productType;
     }
+    */
 }

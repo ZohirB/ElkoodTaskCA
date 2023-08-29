@@ -3,7 +3,7 @@ using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.ProductType.Queries.GetAll;
 
-public class GetProductTypeHandler : IRequestHandler<GetProductTypeQuery, IEnumerable<Domain.Models.ProductType>>
+public class GetProductTypeHandler : IRequestHandler<GetProductTypeQuery, IEnumerable<Domain.Models.MainEntities.ProductType>>
 {
     private readonly IProductTypesService productTypesService;
 
@@ -12,7 +12,7 @@ public class GetProductTypeHandler : IRequestHandler<GetProductTypeQuery, IEnume
         this.productTypesService = productTypesService;
     }
 
-    public async Task<IEnumerable<Domain.Models.ProductType>> Handle(GetProductTypeQuery request, CancellationToken cancellationToken)
+    public async Task<IEnumerable<Domain.Models.MainEntities.ProductType>> Handle(GetProductTypeQuery request, CancellationToken cancellationToken)
     {
         var productTypes = await productTypesService.GetAllProductTypes();
         return productTypes;

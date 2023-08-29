@@ -1,15 +1,17 @@
 ﻿using ElkoodTaskCA.Application.CQRS.CompanyInfo.Commands.Create;
 using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 using ElkoodTaskCA.Domain.Models;
+using ElkoodTaskCA.Domain.Models.MainEntities;
+using ElkoodTaskCA.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace ElkoodTaskCA.Application.Repositories.ImplementationRepository;
 
 public class CompaniesInfoService : ICompaniesInfoService
 {
-    private readonly ApplicationDbContext _context;
+    private readonly ElkoodTaskCADbContext _context;
 
-    public CompaniesInfoService(ApplicationDbContext context)
+    public CompaniesInfoService(ElkoodTaskCADbContext context)
     {
         _context = context;
     }
@@ -33,13 +35,14 @@ public class CompaniesInfoService : ICompaniesInfoService
         return companyInfo;
     }
 
+    /*
     public CompanyInfo DeleteCompanyInfo(CompanyInfo companyInfo)
     {
         _context.Remove(companyInfo);
         _context.SaveChanges();
         return companyInfo;
     }
-
+    */
     public async Task<CompanyInfo> GetCompanyInfoById(int id)
     {
         return await _context.CompanyInfo.SingleOrDefaultAsync(ci => ci.Id == id);

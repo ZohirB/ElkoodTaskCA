@@ -6,7 +6,7 @@ using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.BranchInfo.Commands.Create;
 
-public class CreateBranchInfoHandler : IRequestHandler<CreateBranchInfoCommand, OperationResponse<Domain.Models.BranchInfo>>
+public class CreateBranchInfoHandler : IRequestHandler<CreateBranchInfoCommand, OperationResponse<Domain.Models.MainEntities.BranchInfo>>
 {
     private readonly IBranchesInfoService _branchesInfoService;
 
@@ -15,7 +15,7 @@ public class CreateBranchInfoHandler : IRequestHandler<CreateBranchInfoCommand, 
         _branchesInfoService = branchesInfoService;
     }
 
-    public async Task<OperationResponse<Domain.Models.BranchInfo>> Handle(CreateBranchInfoCommand request,
+    public async Task<OperationResponse<Domain.Models.MainEntities.BranchInfo>> Handle(CreateBranchInfoCommand request,
         CancellationToken cancellationToken)
     {
         var isValidBranchType = await _branchesInfoService.IsValidBranchType(request.BranchTypeId);

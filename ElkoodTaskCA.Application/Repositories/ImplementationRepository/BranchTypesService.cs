@@ -1,14 +1,16 @@
 ﻿using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 using ElkoodTaskCA.Domain.Models;
+using ElkoodTaskCA.Domain.Models.MainEntities;
+using ElkoodTaskCA.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace ElkoodTaskCA.Application.Repositories.ImplementationRepository;
 
 public class BranchTypesService : IBranchTypesService
 {
-    private readonly ApplicationDbContext _context;
+    private readonly ElkoodTaskCADbContext _context;
 
-    public BranchTypesService(ApplicationDbContext context)
+    public BranchTypesService(ElkoodTaskCADbContext context)
     {
         _context = context;
     }
@@ -36,11 +38,13 @@ public class BranchTypesService : IBranchTypesService
         _context.SaveChanges();
         return branchType;
     }
-
+    
+    /*
     public BranchType DeleteBranchType(BranchType branchType)
     {
         _context.Remove(branchType);
         _context.SaveChanges();
         return branchType;
     }
+    */
 }

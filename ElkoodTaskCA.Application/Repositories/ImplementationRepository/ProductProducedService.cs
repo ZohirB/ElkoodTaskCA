@@ -1,15 +1,18 @@
 ﻿using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
 using ElkoodTaskCA.Contracts.Dtos;
+using ElkoodTaskCA.Contracts.Dtos.MainDtos;
 using ElkoodTaskCA.Domain.Models;
+using ElkoodTaskCA.Domain.Models.MainEntities;
+using ElkoodTaskCA.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace ElkoodTaskCA.Application.Repositories.ImplementationRepository;
 
 public class ProductProducedService : IProductProducedService
 {
-    private readonly ApplicationDbContext _context;
+    private readonly ElkoodTaskCADbContext _context;
 
-    public ProductProducedService(ApplicationDbContext context)
+    public ProductProducedService(ElkoodTaskCADbContext context)
     {
         _context = context;
     }

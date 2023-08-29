@@ -2,7 +2,7 @@
 
 namespace ElkoodTaskCA.Application.CQRS.CompanyInfo.Commands.Create;
 
-public class CreateCompanyInfoCommand : IRequest<Domain.Models.CompanyInfo>
+public class CreateCompanyInfoCommand : IRequest<Domain.Models.MainEntities.CompanyInfo>
 {
     [MaxLength(100)] public string Name { get; set; }
 

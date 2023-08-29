@@ -3,7 +3,7 @@ using MediatR;
 
 namespace ElkoodTaskCA.Application.CQRS.BranchType.Queries.GetAll;
 
-public class GetAllBranchTypeHandler : IRequestHandler<GetAllBranchTypeQuery, IEnumerable<Domain.Models.BranchType>>
+public class GetAllBranchTypeHandler : IRequestHandler<GetAllBranchTypeQuery, IEnumerable<Domain.Models.MainEntities.BranchType>>
 {
     private readonly IBranchTypesService _branchTypesService;
 
@@ -12,7 +12,7 @@ public class GetAllBranchTypeHandler : IRequestHandler<GetAllBranchTypeQuery, IE
         _branchTypesService = branchTypesService;
     }
 
-    public async Task<IEnumerable<Domain.Models.BranchType>> Handle(GetAllBranchTypeQuery request,
+    public async Task<IEnumerable<Domain.Models.MainEntities.BranchType>> Handle(GetAllBranchTypeQuery request,
         CancellationToken cancellationToken)
     {
         var branchTypes = await _branchTypesService.GetAllBranchType();

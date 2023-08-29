@@ -2,6 +2,6 @@
 
 namespace ElkoodTaskCA.Application.CQRS.ProductType.Queries.GetAll;
 
-public class GetProductTypeQuery : IRequest<IEnumerable<Domain.Models.ProductType>>
+public class GetProductTypeQuery : IRequest<IEnumerable<Domain.Models.MainEntities.ProductType>>
 {
 }
