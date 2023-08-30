@@ -1,7 +1,7 @@
 ﻿using ElkoodTaskCA.Domain.Entities.General;
 using MediatR;
 
-namespace ElkoodTaskCA.Application.CompanyInfos.Commands.Create;
+namespace ElkoodTaskCA.Application.CompaniesInfo.Commands.Create;
 
 public class CreateCompanyInfoCommand 
 {

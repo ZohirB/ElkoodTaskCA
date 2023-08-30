@@ -5,7 +5,7 @@ using ElkoodTaskCA.Domain.Entities.General;
 using ElkoodTaskCA.Domain.Repositories;
 using MediatR;
 
-namespace ElkoodTaskCA.Application.ProductInfos.Commands.Create;
+namespace ElkoodTaskCA.Application.ProductsInfo.Commands.Create;
 
 public class CreateProductInfoHandler : IRequestHandler<CreateProductInfoCommand.Request, OperationResponse<ProductInfo>>
 {

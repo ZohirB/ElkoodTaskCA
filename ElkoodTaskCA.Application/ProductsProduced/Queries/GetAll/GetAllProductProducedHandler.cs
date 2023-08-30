@@ -5,7 +5,7 @@ using ElkoodTaskCA.Contracts.Dtos.MainDtos;
 using ElkoodTaskCA.Domain.Repositories;
 using MediatR;
 
-namespace ElkoodTaskCA.Application.ProductProduceds.Queries.GetAll;
+namespace ElkoodTaskCA.Application.ProductsProduced.Queries.GetAll;
 
 public class GetAllProductProducedHandler : IRequestHandler<GetAllProductProducedQuery,
     OperationResponse<List<ProductProducedDetailsDto>>>

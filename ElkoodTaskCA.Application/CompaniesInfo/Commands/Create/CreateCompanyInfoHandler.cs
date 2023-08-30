@@ -2,7 +2,7 @@
 using ElkoodTaskCA.Domain.Repositories;
 using MediatR;
 
-namespace ElkoodTaskCA.Application.CompanyInfos.Commands.Create;
+namespace ElkoodTaskCA.Application.CompaniesInfo.Commands.Create;
 
 public class CreateCompanyInfoHandler : IRequestHandler<CreateCompanyInfoCommand.Request, CompanyInfo>
 {

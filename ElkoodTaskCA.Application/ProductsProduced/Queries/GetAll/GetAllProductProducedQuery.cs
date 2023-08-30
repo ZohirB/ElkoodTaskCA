@@ -2,7 +2,7 @@
 using ElkoodTaskCA.Contracts.Dtos.MainDtos;
 using MediatR;
 
-namespace ElkoodTaskCA.Application.ProductProduceds.Queries.GetAll;
+namespace ElkoodTaskCA.Application.ProductsProduced.Queries.GetAll;
 
 public class GetAllProductProducedQuery : IRequest<OperationResponse<List<ProductProducedDetailsDto>>>
 {

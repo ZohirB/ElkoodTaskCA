@@ -1,5 +1,5 @@
-﻿using ElkoodTaskCA.Application.CompanyInfos.Commands.Create;
-using ElkoodTaskCA.Application.CompanyInfos.Queries.GetAll;
+﻿using ElkoodTaskCA.Application.CompaniesInfo.Commands.Create;
+using ElkoodTaskCA.Application.CompaniesInfo.Queries.GetAll;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

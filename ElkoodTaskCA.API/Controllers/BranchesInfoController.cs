@@ -1,7 +1,9 @@
 ﻿using Elkood.Application.OperationResponses;
 using ElkoodTaskCA.Application.BranchInfos.Commands.Create;
 using ElkoodTaskCA.Application.BranchInfos.Queries.GetAll;
+using ElkoodTaskCA.Domain;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ElkoodTaskCA.API.Controllers;
@@ -18,7 +20,7 @@ public class BranchesInfoController : ControllerBase
     }
 
     [HttpGet]
-    //[Authorize(Roles = StaticUserRoles.APP_USER)]
+    [Authorize(Roles = StaticUserRoles.APP_USER)]
     public async Task<IActionResult> GetAllBranchInfo()
     {
         var query = new GetAllBranchInfoQuery();

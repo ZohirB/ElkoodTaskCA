@@ -2,7 +2,7 @@
 using ElkoodTaskCA.Domain.Repositories;
 using MediatR;
 
-namespace ElkoodTaskCA.Application.CompanyInfos.Queries.GetAll;
+namespace ElkoodTaskCA.Application.CompaniesInfo.Queries.GetAll;
 
 public class GetAllCompaniesInfoHandler : IRequestHandler<GetAllCompaniesInfoQuery, IEnumerable<CompanyInfo>>
 {

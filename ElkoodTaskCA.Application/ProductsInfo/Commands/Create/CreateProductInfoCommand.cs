@@ -2,7 +2,7 @@
 using ElkoodTaskCA.Domain.Entities.General;
 using MediatR;
 
-namespace ElkoodTaskCA.Application.ProductInfos.Commands.Create;
+namespace ElkoodTaskCA.Application.ProductsInfo.Commands.Create;
 
 public class CreateProductInfoCommand 
 {

@@ -67,6 +67,7 @@ builder.Services.AddCors();
 
 builder.Services.AddSwaggerGen(options =>
 {
+    options.CustomSchemaIds(s => s.FullName!.Replace("+", "."));
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",

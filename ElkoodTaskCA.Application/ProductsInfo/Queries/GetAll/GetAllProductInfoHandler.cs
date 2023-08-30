@@ -2,7 +2,7 @@
 using ElkoodTaskCA.Domain.Repositories;
 using MediatR;
 
-namespace ElkoodTaskCA.Application.ProductInfos.Queries.GetAll;
+namespace ElkoodTaskCA.Application.ProductsInfo.Queries.GetAll;
 
 public class GetAllProductInfoHandler : IRequestHandler<GetAllProductsInfoQuery, List<ProductDetailsDto>>
 {
