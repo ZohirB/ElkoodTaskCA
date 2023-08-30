@@ -1,5 +1,5 @@
-﻿using ElkoodTaskCA.Application.CQRS.ProductType.Commands.Create;
-using ElkoodTaskCA.Application.CQRS.ProductType.Queries.GetAll;
+﻿using ElkoodTaskCA.Application.ProductTypes.Commands.Create;
+using ElkoodTaskCA.Application.ProductTypes.Queries.GetAll;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

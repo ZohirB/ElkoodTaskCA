@@ -1,5 +1,5 @@
-﻿using ElkoodTaskCA.Application.CQRS.CompanyInfo.Commands.Create;
-using ElkoodTaskCA.Application.CQRS.CompanyInfo.Queries.GetAll;
+﻿using ElkoodTaskCA.Application.CompanyInfos.Commands.Create;
+using ElkoodTaskCA.Application.CompanyInfos.Queries.GetAll;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,7 +25,7 @@ public class CompaniesInfoController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateCompanyInfo(CreateCompanyInfoCommand command)
+    public async Task<IActionResult> CreateCompanyInfo(CreateCompanyInfoCommand.Request command)
     {
         var result = await _mediator.Send(command);
         return new JsonResult(result);

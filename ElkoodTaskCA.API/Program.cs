@@ -1,8 +1,8 @@
 using System.Text;
-using ElkoodTaskCA.Application.Repositories.ImplementationRepository;
-using ElkoodTaskCA.Application.Repositories.InterfaceRepository;
-using ElkoodTaskCA.Domain.Models.UserEntities;
+using ElkoodTaskCA.Domain.Entities.User;
+using ElkoodTaskCA.Domain.Repositories;
 using ElkoodTaskCA.Persistence.Context;
+using ElkoodTaskCA.Persistence.Repositories;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -40,7 +40,8 @@ builder.Services.AddMediatR(
     ElkoodTaskCA.Domain.AssemblyReference.Assembly,
     ElkoodTaskCA.Application.AssemblyReference.Assembly,
     ElkoodTaskCA.API.AssemblyReference.Assembly,
-    ElkoodTaskCA.Persistence.AssemblyReference.Assembly
+    ElkoodTaskCA.Persistence.AssemblyReference.Assembly,
+    ElkoodTaskCA.Contracts.AssemblyReference.Assembly
     );
 
 // ADD Identity

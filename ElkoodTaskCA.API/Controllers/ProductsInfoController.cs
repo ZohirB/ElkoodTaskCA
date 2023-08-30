@@ -1,6 +1,6 @@
 ﻿using Elkood.Application.OperationResponses;
-using ElkoodTaskCA.Application.CQRS.ProductInfo.Commands.Create;
-using ElkoodTaskCA.Application.CQRS.ProductInfo.Queries.GetAll;
+using ElkoodTaskCA.Application.ProductInfos.Commands.Create;
+using ElkoodTaskCA.Application.ProductInfos.Queries.GetAll;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -26,7 +26,7 @@ public class ProductsInfoController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateProductsInfo([FromBody] CreateProductInfoCommand command)
+    public async Task<IActionResult> CreateProductsInfo([FromBody] CreateProductInfoCommand.Request command)
     {
         return await _mediator.Send(command).ToJsonResultAsync();
     }

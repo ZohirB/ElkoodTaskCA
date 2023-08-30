@@ -3,7 +3,7 @@ using System.Security.Claims;
 using System.Text;
 using ElkoodTaskCA.Contracts.Dtos.UserDtos;
 using ElkoodTaskCA.Domain;
-using ElkoodTaskCA.Domain.Models.UserEntities;
+using ElkoodTaskCA.Domain.Entities.User;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
