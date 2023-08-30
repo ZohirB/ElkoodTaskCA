@@ -1,4 +1,7 @@
-﻿using ElkoodTaskCA.Contracts.Dtos.MainDtos;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using ElkoodTaskCA.Contracts.Dtos.MainDtos;
 
 namespace ElkoodTaskCA.Domain.Repositories;
 

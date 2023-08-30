@@ -1,4 +1,6 @@
-﻿using ElkoodTaskCA.Domain.Entities.General;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using ElkoodTaskCA.Domain.Entities.General;
 
 namespace ElkoodTaskCA.Domain.Repositories;
 

@@ -1,4 +1,6 @@
-﻿namespace ElkoodTaskCA.Domain.Entities.General;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace ElkoodTaskCA.Domain.Entities.General;
 
 public class BranchType
 {
