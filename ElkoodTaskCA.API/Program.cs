@@ -3,6 +3,9 @@ using ElkoodTaskCA.Domain.Entities.User;
 using ElkoodTaskCA.Domain.Repositories;
 using ElkoodTaskCA.Persistence.Context;
 using ElkoodTaskCA.Persistence.Repositories;
+using FirebaseAdmin;
+using FirebaseAdmin.Messaging;
+using Google.Apis.Auth.OAuth2;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -25,6 +28,26 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 
+FirebaseApp.Create(new AppOptions()
+{
+    Credential = GoogleCredential.FromFile("fcm.json") 
+});
+var registrationToken = "evzAh6oYTBKY1ar5FqChvr:APA91bHFOgXy-E9VIIpmGoHC55lezm7zMQ6rh6QQXcvtR_WREfUZ96LsUyHMyls2vIaxk7Sfpg2y9n5z1NOlOZuSI2V2TYDlNcLUX9GDxEG9LCDuhFnAfck54z0weCLR1pwlJ59GHBpb";
+var message = new Message()
+{
+    Data = new Dictionary<string, string>()
+    {
+        { "mydata", "1337" },
+    },
+    Token = registrationToken,
+    Notification = new Notification()
+    {
+        Title = "تست تست",
+        Body = "شغاااااااال"
+    }
+};
+string response = FirebaseMessaging.DefaultInstance.SendAsync(message).Result;
+Console.WriteLine("تم");
 
 builder.Services.AddScoped<IBranchTypesService, BranchTypesService>();
 builder.Services.AddScoped<IBranchesInfoService, BranchesInfoService>();
