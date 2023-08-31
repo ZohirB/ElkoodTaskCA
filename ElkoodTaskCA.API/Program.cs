@@ -32,7 +32,7 @@ FirebaseApp.Create(new AppOptions()
 {
     Credential = GoogleCredential.FromFile("fcm.json") 
 });
-var registrationToken = "evzAh6oYTBKY1ar5FqChvr:APA91bHFOgXy-E9VIIpmGoHC55lezm7zMQ6rh6QQXcvtR_WREfUZ96LsUyHMyls2vIaxk7Sfpg2y9n5z1NOlOZuSI2V2TYDlNcLUX9GDxEG9LCDuhFnAfck54z0weCLR1pwlJ59GHBpb";
+var registrationToken = "";
 var message = new Message()
 {
     Data = new Dictionary<string, string>()
