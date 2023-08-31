@@ -28,6 +28,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 
+/*
 FirebaseApp.Create(new AppOptions()
 {
     Credential = GoogleCredential.FromFile("fcm.json") 
@@ -48,7 +49,7 @@ var message = new Message()
 };
 string response = FirebaseMessaging.DefaultInstance.SendAsync(message).Result;
 Console.WriteLine("تم");
-
+*/
 builder.Services.AddScoped<IBranchTypesService, BranchTypesService>();
 builder.Services.AddScoped<IBranchesInfoService, BranchesInfoService>();
 builder.Services.AddScoped<IProductTypesService, ProductTypesService>();
